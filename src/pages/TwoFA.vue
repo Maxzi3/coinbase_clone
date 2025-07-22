@@ -1,6 +1,6 @@
 <template>
-  <div class="min-h-screen flex items-center justify-center bg-white dark:bg-black dark:text-white text-black px-4 py-8">
-    <div class="w-full max-w-md space-y-6 border border-gray-300 rounded-lg p-6">
+  <div class=" flex items-center justify-center bg-white dark:bg-black dark:text-white text-black  py-8">
+    <div class="w-full max-w-md space-y-6 md:border border-gray-300 rounded-lg p-6">
       <h1 class="text-2xl font-semibold">Two-Factor Authentication</h1>
       <p class="text-gray-600 text-sm">
         We sent a 6-digit code to your email: <strong>{{ auth.email }}</strong>

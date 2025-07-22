@@ -1,22 +1,25 @@
 <template>
-    <div class="min-h-screen flex flex-col items-center justify-center px-4 py-8 bg-white dark:bg-black dark:text-white text-black">
-      <div class="w-full max-w-md space-y-10 border border-gray-300 rounded-lg p-6">
-        <h1 class="text-2xl font-semibold">Sign in to Coinbase</h1>
+    <div class="flex flex-col items-center justify-center md:px-4 md:py-8 bg-white dark:bg-black dark:text-white text-black">
+      <div class="w-full max-w-md space-y-4 md:border border-gray-300 rounded-lg p-6">
+        <div>
+          <h1 class="text-2xl font-semibold">Sign in to Coinbase</h1>
+          <p class="text-sm py-2 text-gray-600">To continue to Account Management</p>
+        </div>
   
         <!-- Email Input (Disabled with Icon) -->
         <div class="relative w-full">
-          <font-awesome-icon icon="user" class="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4" />
+          <font-awesome-icon icon="user" class="absolute left-5 top-1/2 -translate-y-1/2 w-4 h-4" />
           <input
             :value="auth.email"
             type="text"
             disabled
-            class="w-full pl-12 pr-4 py-3 border border-gray-300 rounded-md bg-gray-100 dark:bg-black text-sm font-medium cursor-not-allowed"
+            class="w-full pl-12 pr-4 py-4 border border-gray-300 rounded-md bg-gray-100 dark:bg-black text-sm font-medium cursor-not-allowed"
           />
         </div>
   
         <!-- Password Input -->
         <div>
-          <label class="text-sm font-medium">Password</label>
+          <label class="text-sm font-bold">Password</label>
           <div class="relative">
             <input
               :type="show ? 'text' : 'password'"
@@ -30,7 +33,7 @@
           <p v-if="passwordError" class="text-red-500 text-sm mt-1">{{ passwordError }}</p>
   
           <div class="flex items-center justify-between mt-2">
-            <a href="#" class="text-sm text-blue-600 hover:underline">Forgot your password?</a>
+            <a href="#" class="text-sm text-blue-600 hover:underline">Forgot password?</a>
           </div>
         </div>
   
