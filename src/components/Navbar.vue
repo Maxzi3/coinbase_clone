@@ -1,5 +1,5 @@
 <template>
-    <header class="w-full flex items-center justify-between px-6 py-4 sticky top-0 bg-white dark:bg-black">
+    <header class="w-full flex items-center justify-between px-2  py-4 sticky top-0 bg-white dark:bg-black">
       <div class="flex items-center space-x-2">
         <router-link to="/">
         <img :src ='Logo' alt="Coinbase Logo" class="w-15 h-15" />
