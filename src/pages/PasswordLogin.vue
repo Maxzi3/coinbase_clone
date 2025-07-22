@@ -8,7 +8,8 @@
   
         <!-- Email Input (Disabled with Icon) -->
         <div class="relative w-full">
-          <font-awesome-icon icon="user" class="absolute left-5 top-1/2 -translate-y-1/2 w-4 h-4" />
+           <img :src ='AVT' alt="Coinbase Logo" class="rounded-full absolute left-3 top-1/2 -translate-y-1/2 w-7 h-7" />
+          
           <input
             :value="auth.email"
             type="text"
@@ -53,6 +54,7 @@
   import { useRouter } from 'vue-router'
   import { useAuthStore } from '../stores/authStore'
   import BaseButton from '../components/BaseButton.vue'
+  import AVT from '../assets/default.jpg'
   
   // Font Awesome
   import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
