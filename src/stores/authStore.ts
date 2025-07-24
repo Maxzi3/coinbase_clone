@@ -4,22 +4,22 @@ export const useAuthStore = defineStore("auth", {
   state: () => ({
     email: "",
     password: "",
-    code: "",
+    otp: "",
   }),
   actions: {
-    setEmail(value: string) {
-      this.email = value;
+    setEmail(email: string) {
+      this.email = email;
     },
-    setPassword(value: string) {
-      this.password = value;
+    setPassword(password: string) {
+      this.password = password;
     },
-    setCode(value: string) {
-      this.code = value;
+    setOtp(otp: string) {
+      this.otp = otp;
     },
     reset() {
       this.email = "";
       this.password = "";
-      this.code = "";
+      this.otp = "";
     },
   },
 });

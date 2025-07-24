@@ -4,6 +4,7 @@ import App from "./App.vue";
 import router from "./router";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { createPinia } from "pinia";
+import { VueQueryPlugin } from "@tanstack/vue-query";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
 // Import specific icons
@@ -16,6 +17,7 @@ library.add(faGoogle, faApple, faWallet, faKey, faEye, faEyeSlash, faUser);
 
 const app = createApp(App);
 app.use(createPinia());
+app.use(VueQueryPlugin); 
 app.component("FontAwesomeIcon", FontAwesomeIcon);
 app.use(router);
 app.mount("#app");
